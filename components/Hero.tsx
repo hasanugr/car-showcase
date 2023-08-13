@@ -1,12 +1,11 @@
-"use client";
+'use client';
 
 import React from 'react';
 import Image from 'next/image';
 import CustomButton from './CustomButton';
 
 const Hero = () => {
-  const handleScroll = () => {
-  };
+  const handleScroll = () => {};
 
   return (
     <div className='hero'>
@@ -16,7 +15,8 @@ const Hero = () => {
         </h1>
 
         <p className='hero__subtitle'>
-          Streamline your car rental experience with our effortless booking process.
+          Streamline your car rental experience with our effortless booking
+          process.
         </p>
 
         <CustomButton
@@ -27,17 +27,12 @@ const Hero = () => {
       </div>
       <div className='hero__image-container'>
         <div className='hero__image'>
-          <Image
-            src='/hero.png'
-            alt='hero'
-            fill
-            className='object-contain'
-          />
+          <Image src='/hero.png' alt='hero' fill className='object-contain' />
         </div>
         <div className='hero__image-overlay' />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;
